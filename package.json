@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint '**/*.js'",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nawal-401d3/Redux.git"
