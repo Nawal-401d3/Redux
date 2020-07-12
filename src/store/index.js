@@ -52,6 +52,10 @@ const reducer = (state = initialState, action) => {
 
         // return {categories,products,activeCat};
 
+        case 'ADD_TO_CART':
+            newState.cart++;
+            newState.products.invCount--;
+
         case 'RESET':
             return 'No categories or products';
 
