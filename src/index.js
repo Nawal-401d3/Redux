@@ -14,6 +14,7 @@ function Entry() {
     //   <App />
     // </Provider>
     <>
+    <App />
     </>
   );
 }
