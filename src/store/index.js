@@ -21,13 +21,14 @@ let initialState = {
 /*********************************************** Reducer **********************************************************/ 
 const reducer = (state = initialState , action) => {
 
-    console.log('state.products : ', state.products);
+    // console.log('state.products : ', state.products);
     // type = action.type , payload = action.payload  
     let { type , payload } = action;
   
     switch(type){
     case 'CATTOPRO':
         state.activeCat = payload;
+        console.log('state.activeCat',state.activeCat);
         return state;
 
     //   let activeCat = payload;
@@ -38,15 +39,16 @@ const reducer = (state = initialState , action) => {
     //     }
     //     return cat;
     //   });
-    //   console.log('state.products : ', state.products);
+    // //   console.log('state.products : ', state.products);
     //   let products = state.products.map( pro => {
     //     console.log('pro in actions : ', pro);
     //     if(pro.catName === payload){
+    //         console.log('payloaddddd',payload);
     //       return {catName:pro.catName,name:pro.name,desc:pro.desc,price:pro.price,invCount:pro.invCount};
     //     }
     //     return pro;
     //   });
-      // console.log('categories : ', categories);
+    // //   console.log('categories : ', categories);
   
     // return {categories,products,activeCat};
   

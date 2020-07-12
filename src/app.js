@@ -10,7 +10,7 @@ export default props => {
   return (
         <>
         <Header />
-        {/* <Products /> */}
+        <Products />
         <Categories />
         <Footer />
         </>
