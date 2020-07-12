@@ -21,7 +21,11 @@ const Status = props => {
                 }
             })
             }
+            <div>
+                <p id="name"> The Active Category Name : {props.activeCat}</p>
+            </div>
         </section>
+
     );
 };
 
