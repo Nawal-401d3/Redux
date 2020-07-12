@@ -5,7 +5,7 @@ import { catToPro } from '../store/index.js';
 const Status = props => {
     return (
         <section className="proSec">
-
+            <h1> The Categories </h1>
             {props.categories.map(cat => {
                 // console.log('proppsspppps in catttttttttttt', props);
                 //   console.log('catttttttttttttttttttttttttttt : ', cat.name);
