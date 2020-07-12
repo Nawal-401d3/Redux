@@ -6,13 +6,13 @@ import Categories from './components/Categories.js';
 import Products from './components/Products.js';
 
 export default props => {
-//   console.log('props in app : ', props);
+  //   console.log('props in app : ', props);
   return (
-        <>
-        <Header />
-        <Products />
-        <Categories />
-        <Footer />
-        </>
+    <>
+      <Header />
+      <Products />
+      <Categories />
+      <Footer />
+    </>
   );
 };

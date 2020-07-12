@@ -24,7 +24,7 @@ const reducer = (state = initialState, action) => {
     // console.log('state.products : ', state.products);
     // type = action.type , payload = action.payload  
     let { type, payload } = action;
-    let newState = { ...state};
+    let newState = { ...state };
     switch (type) {
         case 'CATTOPRO':
             newState.activeCat = payload;
