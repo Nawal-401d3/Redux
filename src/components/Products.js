@@ -6,9 +6,9 @@ const Status = props => {
   return (
     <section className="proSec">
         {props.products.map(pro => {
-        console.log('proooooooooooooooo', props.status.activeCat);
+        console.log('proooooooooooooooo', props.activeCat);
 
-            if(pro.catName === props.status.activeCat){
+            if(pro.catName === props.activeCat){
           console.log('prooooooooooooooooooooooooooooooo : ', props.activeCat);
           return <li key={pro.name}>
             <p> {pro.name} </p>
@@ -25,7 +25,7 @@ const Status = props => {
 
 const mapStateToProps = state => ({
   products: state.products,
-  status : state.activeCat
+  activeCat : state.activeCat
 });
 
 const mapDispatchToProps = { catToPro, reset };
