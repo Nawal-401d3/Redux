@@ -6,16 +6,13 @@ import App from './app.js';
 
 import './app.scss';
 
-// import store from './store/index.js';
+import store from './store/index.js';
 
 function Entry() {
   return (
-    // <Provider store={store}>
-    //   <App />
-    // </Provider>
-    <>
-    <App />
-    </>
+    <Provider store={store}>
+      <App />
+    </Provider>
   );
 }
 

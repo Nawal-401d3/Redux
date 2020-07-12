@@ -11,7 +11,7 @@ export default props => {
         <>
         <Header />
         {/* <Products /> */}
-        {/* <Categories /> */}
+        <Categories />
         <Footer />
         </>
   );
